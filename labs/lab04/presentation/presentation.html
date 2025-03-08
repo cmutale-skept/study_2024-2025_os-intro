@@ -1,0 +1,230 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Мутале Чали</li>
+<li>Студент НКАбд-05-24</li>
+<li>Факультет Физико-математический и естественный наук</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1032239667@pfur.ru">1032239667@pfur.ru</a></li>
+<li><a href="https://cmutale-skept.github.io/ru/"
+class="uri">https://cmutale-skept.github.io/ru/</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+
+</div>
+</div>
+<h1 id="цель-работы">Цель работы</h1>
+<p>Цель данной работы является получением навыков правильной работы с
+репозиториями git.</p>
+<h1 id="выполнение-лабораторной-работы">Выполнение лабораторной
+работы</h1>
+<h2 id="установка-git-flow">Установка git-flow</h2>
+<p>Gitflow Workflow предполагает выстраивание строгой модели ветвления с
+учётом выпуска проекта. Сначала я включаю репозиторий copr:</p>
+<figure id="fig:001">
+<img src="image/1.png" style="width:60.0%" alt="включение copr" />
+<figcaption aria-hidden="true">включение copr</figcaption>
+</figure>
+<h2 id="установка-git-flow-1">Установка git-flow</h2>
+<p>Используя dnf install скачаю gitflow:</p>
+<figure id="fig:002">
+<img src="image/2.png" style="width:60.0%" alt="dnf install gitflow" />
+<figcaption aria-hidden="true">dnf install gitflow</figcaption>
+</figure>
+<h2 id="установка-node.js">Установка Node.js</h2>
+<p>Для семантического версионирования и общепринятых коммитов я
+устанавливаю Nodejs и pnpm:</p>
+<figure id="fig:003">
+<img src="image/3.png" style="width:60.0%" alt="Установка Nodejs" />
+<figcaption aria-hidden="true">Установка Nodejs</figcaption>
+</figure>
+<h2 id="установка-node.js-1">Установка Node.js</h2>
+<figure id="fig:004">
+<img src="image/4.png" style="width:60.0%" alt="Установка pnpm" />
+<figcaption aria-hidden="true">Установка pnpm</figcaption>
+</figure>
+<h2 id="настройка-node.js">Настройка Node.js</h2>
+<p>Запуская pnpm setup я добавляю каталог с исполняемыми файлами,
+устанавливаемыми yarn для работы с Node.js в переменную PATH:</p>
+<figure id="fig:005">
+<img src="image/5.png" style="width:60.0%" alt="Запуск pnpm" />
+<figcaption aria-hidden="true">Запуск pnpm</figcaption>
+</figure>
+<h2 id="настройка-node.js-1">Настройка Node.js</h2>
+<p>Далее перелогинуюсь и выполняю source ~/.bashrc:</p>
+<figure id="fig:006">
+<img src="image/6.png" style="width:60.0%" alt="~/.bashrc" />
+<figcaption aria-hidden="true">~/.bashrc</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты">Общепринятые коммиты</h2>
+<p>Для помощи в форматировании коммитов добавляю программу
+commitizen:</p>
+<figure id="fig:007">
+<img src="image/7.png" style="width:60.0%"
+alt="добавление commitizen" />
+<figcaption aria-hidden="true">добавление commitizen</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-1">Общепринятые коммиты</h2>
+<p>Добавляю standard-changelog для помощи в создании логов:</p>
+<figure id="fig:008">
+<img src="image/8.png" style="width:60.0%"
+alt="добавление standard-changelog" />
+<figcaption aria-hidden="true">добавление
+standard-changelog</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-2">Общепринятые коммиты</h2>
+<p>Создаю репозиторий на GitHub назову его git-extended:</p>
+<figure id="fig:009">
+<img src="image/9.png" style="width:60.0%"
+alt="Создание git-extended" />
+<figcaption aria-hidden="true">Создание git-extended</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-3">Общепринятые коммиты</h2>
+<p>Делаю первый коммит и выкладываю на github:</p>
+<figure id="fig:0012">
+<img src="image/12.png" style="width:60.0%" alt="Первый коммит" />
+<figcaption aria-hidden="true">Первый коммит</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-4">Общепринятые коммиты</h2>
+<p>Я инициализирую pnpm:</p>
+<figure id="fig:0013">
+<img src="image/13.png" style="width:60.0%"
+alt="Инициализирование pnpm" />
+<figcaption aria-hidden="true">Инициализирование pnpm</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-5">Общепринятые коммиты</h2>
+<p>Заполняю несколько параметров пакета (файл package.json):</p>
+<figure id="fig:0014">
+<img src="image/14.png" style="width:60.0%" alt="Заполнение пакетов" />
+<figcaption aria-hidden="true">Заполнение пакетов</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-6">Общепринятые коммиты</h2>
+<p>Добавляю новые файлы и выполняю коммит (указиваю тип коммит (feat)) и
+отправляю на гит:</p>
+<figure id="fig:0015">
+<img src="image/15.png" style="width:60.0%"
+alt="Добавление новых файлов" />
+<figcaption aria-hidden="true">Добавление новых файлов</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-7">Общепринятые коммиты</h2>
+<p>Инициализирую git-flow и указываю ветки:</p>
+<figure id="fig:0016">
+<img src="image/17.png" style="width:60.0%"
+alt="Инициализирование git-flow" />
+<figcaption aria-hidden="true">Инициализирование git-flow</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-8">Общепринятые коммиты</h2>
+<p>Преверяю что я на ветке develop с промощью git branch:</p>
+<figure id="fig:0017">
+<img src="image/18.png" style="width:60.0%" alt="Проверка ветки" />
+<figcaption aria-hidden="true">Проверка ветки</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-9">Общепринятые коммиты</h2>
+<p>Загружаю весь репозиторий в хранилище с помощью git push –all:</p>
+<figure id="fig:0018">
+<img src="image/19.png" style="width:60.0%"
+alt="Загрузка репозиторий" />
+<figcaption aria-hidden="true">Загрузка репозиторий</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-10">Общепринятые коммиты</h2>
+<p>Установливаю внешнюю ветку как вышестоящую для этой ветки
+(develop):</p>
+<figure id="fig:0019">
+<img src="image/20.png" style="width:60.0%"
+alt="установка внешней ветки" />
+<figcaption aria-hidden="true">установка внешней ветки</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-11">Общепринятые коммиты</h2>
+<p>Создаю релиз с версией 1.0.0 и журнал изменений
+(standard-changelog)::</p>
+<figure id="fig:0020">
+<img src="image/21.png" style="width:60.0%" alt="Создание релиза" />
+<figcaption aria-hidden="true">Создание релиза</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-12">Общепринятые коммиты</h2>
+<p>Добавляю журнал изменений в индекс:</p>
+<figure id="fig:0021">
+<img src="image/22.png" style="width:60.0%"
+alt="Добавление журнала изменений" />
+<figcaption aria-hidden="true">Добавление журнала изменений</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-13">Общепринятые коммиты</h2>
+<p>Залью релизную ветку в основную ветку:</p>
+<figure id="fig:0032">
+<img src="image/23.png" style="width:60.0%" alt="Замена ветки" />
+<figcaption aria-hidden="true">Замена ветки</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-14">Общепринятые коммиты</h2>
+<p>Отправляю данные на github:</p>
+<figure id="fig:0022">
+<img src="image/24.png" style="width:60.0%" alt="Отправка на гит" />
+<figcaption aria-hidden="true">Отправка на гит</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-15">Общепринятые коммиты</h2>
+<p>Создаю релиз на github. Для этого использую утилиты работы с github
+gh (gh release create):</p>
+<figure id="fig:0023">
+<img src="image/25.png" style="width:60.0%" alt="Создание релиза" />
+<figcaption aria-hidden="true">Создание релиза</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-16">Общепринятые коммиты</h2>
+<p>Создаю ветку для новой функциональности:</p>
+<figure id="fig:0024">
+<img src="image/26.png" style="width:60.0%"
+alt="Создание ветки feature_branch" />
+<figcaption aria-hidden="true">Создание ветки
+feature_branch</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-17">Общепринятые коммиты</h2>
+<p>Далее, продолжаю работу c git как обычно. Создаю релиз с версией
+1.2.3:</p>
+<figure id="fig:0025">
+<img src="image/27.png" style="width:60.0%"
+alt="Создание релиза с версией 1.2.3" />
+<figcaption aria-hidden="true">Создание релиза с версией
+1.2.3</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-18">Общепринятые коммиты</h2>
+<p>Обновляю номер версии в файле package.json в 1.2.3:</p>
+<figure id="fig:0026">
+<img src="image/28.png" style="width:60.0%"
+alt="Обновление номера версии" />
+<figcaption aria-hidden="true">Обновление номера версии</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-19">Общепринятые коммиты</h2>
+<p>Создаю журнал изменений (standard-changelog):</p>
+<figure id="fig:0027">
+<img src="image/29.png" style="width:60.0%"
+alt="Создание нового журнала изменений" />
+<figcaption aria-hidden="true">Создание нового журнала
+изменений</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-20">Общепринятые коммиты</h2>
+<p>Добавляю журнал изменений в индекс:</p>
+<figure id="fig:0028">
+<img src="image/30.png" style="width:60.0%" alt="Добавление журнала" />
+<figcaption aria-hidden="true">Добавление журнала</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-21">Общепринятые коммиты</h2>
+<p>Залью релизную ветку в основную ветку:</p>
+<figure id="fig:0029">
+<img src="image/31.png" style="width:60.0%" alt="Замена ветки" />
+<figcaption aria-hidden="true">Замена ветки</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-22">Общепринятые коммиты</h2>
+<p>Отправляю данные на github:</p>
+<figure id="fig:0030">
+<img src="image/32.png" style="width:60.0%" alt="Отправка данных" />
+<figcaption aria-hidden="true">Отправка данных</figcaption>
+</figure>
+<h2 id="общепринятые-коммиты-23">Общепринятые коммиты</h2>
+<p>Создаю релиз на github с комментарием из журнала изменений:</p>
+<figure id="fig:0031">
+<img src="image/33.png" style="width:60.0%" alt="Cоздание релиза" />
+<figcaption aria-hidden="true">Cоздание релиза</figcaption>
+</figure>
+<h1 id="выводы">Выводы</h1>
+<p>При выполнение работы я получила навыки правильной работы с
+репозиториями git.</p>
