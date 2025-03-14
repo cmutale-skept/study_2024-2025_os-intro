@@ -1,0 +1,260 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:50%;">
+<ul>
+<li>Мутале Чали</li>
+<li>НКАбд-05-24</li>
+<li>Факультет физико-математический и естественных наук</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="1032239667@rudn.ru">1032239667@rudn.ru</a></li>
+<li><a href="https://cmutale-skept.github.io/"
+class="uri">https://cmutale-skept.github.io/</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+
+</div>
+</div>
+<h1 id="цель-работы">Цель работы</h1>
+<p>Цель данной работы – настроика рабочей среды с помощью менеджера
+паролей pass и конфигурации chezmoi.</p>
+<h2 id="установка-и-настройка-pass">Установка и Настройка Pass</h2>
+<p>С помощью командой dnf install через суперпользователя устанавливаю
+pass, pass-otp и gopass:</p>
+<figure id="fig:001">
+<img src="image/1.PNG" style="width:50.0%"
+alt="Установка pass pass-otp" />
+<figcaption aria-hidden="true">Установка pass pass-otp</figcaption>
+</figure>
+<h2 id="установка-и-настройка-pass-1">Установка и Настройка Pass</h2>
+<p>Создаю новый ключ GPG поскольку команда gpg –list-secret-keys ничего
+не выводила:</p>
+<figure id="fig:003">
+<img src="image/2.PNG" style="width:50.0%" alt="Создание ключа GPG" />
+<figcaption aria-hidden="true">Создание ключа GPG</figcaption>
+</figure>
+<h2 id="установка-и-настройка-pass-2">Установка и Настройка Pass</h2>
+<figure id="fig:004">
+<img src="image/3.PNG" style="width:50.0%" alt="Созданные ключи" />
+<figcaption aria-hidden="true">Созданные ключи</figcaption>
+</figure>
+<h2 id="установка-и-настройка-pass-3">Установка и Настройка Pass</h2>
+<p>С помощью pass init, инициализирую хранилище указывая свой адрес
+электроной почты и создаю структуру git (pass git init) для
+синхронирования:</p>
+<figure id="fig:005">
+<img src="image/4.PNG" style="width:50.0%"
+alt="Инициализирование хранилище" />
+<figcaption aria-hidden="true">Инициализирование хранилище</figcaption>
+</figure>
+<h2 id="установка-и-настройка-pass-4">Установка и Настройка Pass</h2>
+<p>Перехожу в ~/.password-store для посмотра статуса синхронизации:</p>
+<figure id="fig:006">
+<img src="image/5.PNG" style="width:50.0%"
+alt="посмотр статуса синхронизации" />
+<figcaption aria-hidden="true">посмотр статуса
+синхронизации</figcaption>
+</figure>
+<h2 id="настройка-интерфейса-с-броузером">Настройка интерфейса с
+броузером</h2>
+<p>Добавляю плагин browserpass для firefox через броузера:</p>
+<figure id="fig:007">
+<img src="image/6.PNG" style="width:50.0%" alt="Добавлен плагин" />
+<figcaption aria-hidden="true">Добавлен плагин</figcaption>
+</figure>
+<h2 id="настройка-интерфейса-с-броузером-1">Настройка интерфейса с
+броузером</h2>
+<p>Для взаимодействия с броузером используется интерфейс native
+messaging. Поэтому кроме плагина к броузеру устанавливается программа,
+обеспечивающая интерфейс native messaging. Делаю это через терминала</p>
+<figure id="fig:008">
+<img src="image/7.PNG" style="width:50.0%"
+alt="Включение репозитория Copr" />
+<figcaption aria-hidden="true">Включение репозитория Copr</figcaption>
+</figure>
+<h2 id="настройка-интерфейса-с-броузером-2">Настройка интерфейса с
+броузером</h2>
+<figure id="fig:009">
+<img src="image/8.PNG" style="width:50.0%"
+alt="Установка browserpass native" />
+<figcaption aria-hidden="true">Установка browserpass native</figcaption>
+</figure>
+<h2 id="сохранение-пароля">Сохранение пароля</h2>
+<p>Добавляю новый пароль в файле, который будет использоваться для
+хранения пароля. Этот файл находится в каталоге, определяющее файловую
+структуру для вашего хранилища паролей.</p>
+<figure id="fig:0010">
+<img src="image/9.PNG" style="width:50.0%" alt="Добавление пароля" />
+<figcaption aria-hidden="true">Добавление пароля</figcaption>
+</figure>
+<h2 id="сохранение-пароля-1">Сохранение пароля</h2>
+<p>При запуске pass BrowserPass/Passwords.txt, выводится запрос
+подтвердить созданный пароль:</p>
+<figure id="fig:0012">
+<img src="image/10.PNG" style="width:50.0%"
+alt="Подтверждение созданного пароля" />
+<figcaption aria-hidden="true">Подтверждение созданного
+пароля</figcaption>
+</figure>
+<h2 id="сохранение-пароля-2">Сохранение пароля</h2>
+<p>Заменяю существующий пароль с помощью pass generate –in-place
+Passwords.txt</p>
+<figure id="fig:0013">
+<img src="image/11.PNG" style="width:50.0%" alt="Замена пароля" />
+<figcaption aria-hidden="true">Замена пароля</figcaption>
+</figure>
+<h2 id="дополнительное-программное-обеспечение">Дополнительное
+программное обеспечение</h2>
+<p>Устанавливаю дополнительное программное обеспечение:</p>
+<figure id="fig:0014">
+<img src="image/12.PNG" style="width:50.0%"
+alt="Установка дополнительного программного обеспечения" />
+<figcaption aria-hidden="true">Установка дополнительного программного
+обеспечения</figcaption>
+</figure>
+<h2 id="дополнительное-программное-обеспечение-1">Дополнительное
+программное обеспечение</h2>
+<p>Установливаю шрифты iosevka. Для этого надо включть copr
+peterwu/iosevka и искать iosevka:</p>
+<figure id="fig:0015">
+<img src="image/13.PNG" style="width:50.0%"
+alt="Включение copr peterwu/iosevka" />
+<figcaption aria-hidden="true">Включение copr
+peterwu/iosevka</figcaption>
+</figure>
+<h2 id="дополнительное-программное-обеспечение-2">Дополнительное
+программное обеспечение</h2>
+<figure id="fig:0016">
+<img src="image/14.PNG" style="width:50.0%" alt="Поиск iosevka" />
+<figcaption aria-hidden="true">Поиск iosevka</figcaption>
+</figure>
+<h2 id="дополнительное-программное-обеспечение-3">Дополнительное
+программное обеспечение</h2>
+<figure id="fig:0017">
+<img src="image/15.PNG" style="width:50.0%" alt="Установка шрифты" />
+<figcaption aria-hidden="true">Установка шрифты</figcaption>
+</figure>
+<h2 id="установка-бинарного-файла">Установка бинарного файла</h2>
+<p>Скрипт определяет архитектуру процессора и операционную систему и
+скачивает необходимый файл, поэтому я просто запускаю sh -c “$(wget -qO-
+chezmoi.io/get)”:</p>
+<figure id="fig:0018">
+<img src="image/16.PNG" style="width:50.0%" alt="Установка chezmoi" />
+<figcaption aria-hidden="true">Установка chezmoi</figcaption>
+</figure>
+<h2 id="создание-собственного-репозитория">Создание собственного
+репозитория</h2>
+<p>С помощью утилита gh я создаю новый репозиторий dotfiles по шаблону
+yamadharma</p>
+<figure id="fig:0019">
+<img src="image/17.PNG" style="width:50.0%"
+alt="Создание репозиторий" />
+<figcaption aria-hidden="true">Создание репозиторий</figcaption>
+</figure>
+<h2 id="подключение-репозитория-к-своей-системе">Подключение репозитория
+к своей системе</h2>
+<p>Сhezmoi является клоном репозитория dotfiles. Инициализирую его:</p>
+<figure id="fig:0020">
+<img src="image/18.PNG" style="width:50.0%"
+alt="Инициализирование Сhezmoi" />
+<figcaption aria-hidden="true">Инициализирование Сhezmoi</figcaption>
+</figure>
+<h2 id="подключение-репозитория-к-своей-системе-1">Подключение
+репозитория к своей системе</h2>
+<p>Проверяю какие изменения внесёт chezmoi в домашний каталог, запуская
+chezmoi diff:</p>
+<figure id="fig:0021">
+<img src="image/19.PNG" style="width:50.0%" alt="Проверка изменений" />
+<figcaption aria-hidden="true">Проверка изменений</figcaption>
+</figure>
+<h2 id="подключение-репозитория-к-своей-системе-2">Подключение
+репозитория к своей системе</h2>
+<p>Применяю изменения запускав chezmoi apply -v:</p>
+<figure id="fig:0022">
+<img src="image/20.PNG" style="width:50.0%"
+alt="Применение изменений" />
+<figcaption aria-hidden="true">Применение изменений</figcaption>
+</figure>
+<h2 id="использование-chezmoi-на-нескольких-машинах">Использование
+chezmoi на нескольких машинах</h2>
+<p>На другой машине я устанавливаю chezmoi</p>
+<figure id="fig:0023">
+<img src="image/21.PNG" style="width:50.0%"
+alt="Установка chezmoi на другой машине" />
+<figcaption aria-hidden="true">Установка chezmoi на другой
+машине</figcaption>
+</figure>
+<h2 id="использование-chezmoi-на-нескольких-машинах-1">Использование
+chezmoi на нескольких машинах</h2>
+<p>Далее инициализирую chezmoi со своём репозиторием dotfiles:</p>
+<figure id="fig:0024">
+<img src="image/22.PNG" style="width:50.0%"
+alt="Инициализирование Сhezmoi на другой машине" />
+<figcaption aria-hidden="true">Инициализирование Сhezmoi на другой
+машине</figcaption>
+</figure>
+<h2 id="использование-chezmoi-на-нескольких-машинах-2">Использование
+chezmoi на нескольких машинах</h2>
+<p>Проверяю какие изменения внесёт chezmoi в домашний каталог, запуская
+chezmoi diff:</p>
+<figure id="fig:0025">
+<img src="image/23.PNG" style="width:50.0%"
+alt="Проверка изменений на второй машине" />
+<figcaption aria-hidden="true">Проверка изменений на второй
+машине</figcaption>
+</figure>
+<h2 id="использование-chezmoi-на-нескольких-машинах-3">Использование
+chezmoi на нескольких машинах</h2>
+<p>Применяю изменения запускав chezmoi apply -v:</p>
+<figure id="fig:0026">
+<img src="image/24.PNG" style="width:50.0%"
+alt="Применение изменений на второй машине" />
+<figcaption aria-hidden="true">Применение изменений на второй
+машине</figcaption>
+</figure>
+<h2 id="использование-chezmoi-на-нескольких-машинах-4">Использование
+chezmoi на нескольких машинах</h2>
+<figure id="fig:0027">
+<img src="image/25.PNG" style="width:50.0%" alt="Обновление chezmoi" />
+<figcaption aria-hidden="true">Обновление chezmoi</figcaption>
+</figure>
+<h2 id="ежедневные-операции-c-chezmoi">Ежедневные операции c
+chezmoi</h2>
+<p>На моей основной машине я обновляю chezmoi на всякий случай:</p>
+<figure id="fig:0028">
+<img src="image/26.PNG" style="width:50.0%" alt="Обновление chezmoi" />
+<figcaption aria-hidden="true">Обновление chezmoi</figcaption>
+</figure>
+<h2 id="ежедневные-операции-c-chezmoi-1">Ежедневные операции c
+chezmoi</h2>
+<p>Выполняю chezmoi git pull – –autostash –rebase &amp;&amp; chezmoi
+diff. Это запускается git pull –autostash –rebase в исходном каталоге, а
+chezmoi diff затем показывает разницу между целевым состоянием,
+вычисленным из исходного каталога, и фактическим состоянием.</p>
+<figure id="fig:0029">
+<img src="image/27.PNG" style="width:50.0%"
+alt="Извлечение изменений" />
+<figcaption aria-hidden="true">Извлечение изменений</figcaption>
+</figure>
+<h2 id="ежедневные-операции-c-chezmoi-2">Ежедневные операции c
+chezmoi</h2>
+<p>Далее применяю “изменения”:</p>
+<figure id="fig:0030">
+<img src="image/28.PNG" style="width:50.0%"
+alt="Применение изменений после обновления" />
+<figcaption aria-hidden="true">Применение изменений после
+обновления</figcaption>
+</figure>
+<h2 id="ежедневные-операции-c-chezmoi-3">Ежедневные операции c
+chezmoi</h2>
+<p>Когда в исходный каталог вносятся изменения, chezmoi фиксирует
+изменения с помощью автоматически сгенерированного сообщения фиксации и
+отправляет их в репозиторий. Эта функция отключена по умолчанию но у
+меня уже была включено. Можно это увидеть в файле конфигурации
+~/.config/chezmoi/chezmoi.toml:</p>
+<figure id="fig:0031">
+<img src="image/29.PNG" style="width:50.0%"
+alt="Функция фиксирование изменений автоматически" />
+<figcaption aria-hidden="true">Функция фиксирование изменений
+автоматически</figcaption>
+</figure>
