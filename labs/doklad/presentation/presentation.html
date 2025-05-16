@@ -1,0 +1,89 @@
+<h1 id="информация">Информация</h1>
+<h2 id="докладчик">Докладчик</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:70%;">
+<ul>
+<li>Мутале Чали</li>
+<li>Студент НКА 05-24</li>
+<li>факультет физико-математичесих</li>
+<li>Российский университет дружбы народов</li>
+<li><a href="mailto:1032239667@rudn.ru">1032239667@rudn.ru</a></li>
+<li><a href="https://cmutale-skept.github.io/ru/"
+class="uri">https://cmutale-skept.github.io/ru/</a></li>
+</ul>
+</div><div class="column" style="width:30%;">
+
+</div>
+</div>
+<h1 id="вводная-часть">Вводная часть</h1>
+<h2 id="цели-работы">Цели работы</h2>
+<p>Изучить основы работы с Chocolatey — менеджером пакетов для Windows,
+предназначенным для упрощения установки, обновления и управления
+программным обеспечением. Научиться использовать Chocolatey для
+автоматизации задач администрирования.</p>
+<h2 id="задание">Задание</h2>
+<p>1.Установить Chocolatey на систему Windows. 2.Изучить основные
+команды Chocolatey для управления пакетами. 3.Написать команд для работы
+с Chocolatey в среде Bash. 4.Создать командный файл для автоматизации
+установки программного обеспечения с помощью Chocolatey.</p>
+<h1 id="выполнение-лабораторной-работы">Выполнение лабораторной
+работы</h1>
+<h2 id="установка-chocolatey">Установка Chocolatey</h2>
+<p>•Важно запускать установку от имени администратора. Команда в
+PowerShell меняет политику выполнения и загружает скрипт с официального
+сайта. •После установки проверьте версию через choco –version. Например,
+в нашем случае это 2.4.3.</p>
+<figure id="fig:001">
+<img src="image/1.PNG" style="width:50.0%"
+alt="Рис 1: Код для установки Chocolatey" />
+<figcaption aria-hidden="true">Рис 1: Код для установки
+Chocolatey</figcaption>
+</figure>
+<figure id="fig:003">
+<img src="image/2.PNG" style="width:20.0%"
+alt="Рис 2: версия Chocolatey" />
+<figcaption aria-hidden="true">Рис 2: версия Chocolatey</figcaption>
+</figure>
+<h2 id="основные-команды-chocolatey">Основные команды Chocolatey</h2>
+<p>Сначала я написал команду choco install firefox –y, где install —
+базовая команда. Флаг -y автоматически подтверждает действия, что
+критично для скриптов.</p>
+<figure id="fig:004">
+<img src="image/3.PNG" style="width:50.0%"
+alt="Рис 3: : Установка пакетов" />
+<figcaption aria-hidden="true">Рис 3: : Установка пакетов</figcaption>
+</figure>
+<p>Далее напис ал команду choco list –dependence, которую показывает
+только установленные пакеты, а не все доступные.</p>
+<figure id="fig:008">
+<img src="image/4.PNG" style="width:50.0%"
+alt="Рис 4: установленные пакеты" />
+<figcaption aria-hidden="true">Рис 4: установленные пакеты</figcaption>
+</figure>
+<figure id="fig:005">
+<img src="image/5.PNG" style="width:50.0%"
+alt="Рис 5: Управление конфигурацией" />
+<figcaption aria-hidden="true">Рис 5: Управление
+конфигурацией</figcaption>
+</figure>
+<h2 id="проверка-работы-команд">Проверка работы команд:</h2>
+<p>Проверка работы команд:</p>
+<figure id="fig:009">
+<img src="image/6.PNG" style="width:50.0%"
+alt="Рис 6: : Проверка работы команд" />
+<figcaption aria-hidden="true">Рис 6: : Проверка работы
+команд</figcaption>
+</figure>
+<p>Установка пакета из конкретного источника (например, vlc из
+Chocolatey Community Repository):</p>
+<figure id="fig:009">
+<img src="image/6.PNG" style="width:50.0%"
+alt="Рис 7: Проверка работы команд" />
+<figcaption aria-hidden="true">Рис 7: Проверка работы
+команд</figcaption>
+</figure>
+<h1 id="вывод">ВЫвод</h1>
+<p>Chocolatey превращает управление ПО в Windows из рутинной задачи в
+эффективный автоматизированный процесс, сравнимый по удобству с apt в
+Linux-системах. Это важно инструмент в арсенале любого человек,
+работающего с Windows- инфраструктурой.</p>
